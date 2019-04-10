@@ -1,9 +1,16 @@
+# Overview / Scope
+For downloading from a 3rd party repository you don't have push permissions for, then pushing your changes to your own personal repository.
+
 # Things to Cover
 # Definitions
 1. Fork vs Branch
 - Fork is permanent split
 - branch has capabilities to merge back into branches on repository
-
+2. What is git clone
+- fetch and a merge
+3. what's a fetch and a merge?
+-fetch takes all the changes up to date on the online master
+-merge takes those changes and 
 # Pulling from class repository, pushing to your own repository
 ## Things to do once
 1. Fork class repo > personal online repo
@@ -11,13 +18,19 @@
 3. git remote add upstream [class repo URL]
 -check using git remote -v
 
-## Things to do DAILY
+## Things to do DAILY - Metis "Workflow"
 1. git pull upstream master
 2. Push changes regularly
 - git add [files, or \*]
 - git commit -m "Message to put in commit"
 - git push
-- don't nee
+
+## Personal Project Workflow
+1. Make Changes
+2. Git commands
+-git add [files]
+-git commit -m "Message for commit"
+-git push 
 
 # Conflict merging
 
@@ -53,3 +66,10 @@
 -Loses all changes you've made to trackedf files
 -Note: Untracked files don't get reset (new files on your working directory won't get deleted)
 
+## Aliasing (Works on all OS's but i'll demonstrate MAC only)
+-filename may change (bashrc vs bash_profile)
+
+
+
+# Resources
+- https://stackoverflow.com/questions/14894768/in-git-how-is-fetch-different-than-pull-and-how-is-merge-different-than-rebase
