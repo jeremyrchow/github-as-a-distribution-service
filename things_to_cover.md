@@ -2,7 +2,7 @@
 # Definitions
 1. Fork vs Branch
 - Fork is permanent split
-- branch has capabilities to merge back into 
+- branch has capabilities to merge back into branches on repository
 
 # Pulling from class repository, pushing to your own repository
 ## Things to do once
@@ -39,7 +39,17 @@
 -What is an staged index vs working copy
 ### How to reset:
 -git reset [--hard vs --mixed vs --soft]
-- soft is just your staged files
-- mixed is the index that you're currently working on
-- hard is index you're working on , files in your computer
---hard is the only flag that will actually delete files
+1. soft is just your staged files
+-accidentally staged a file you don't want to push
+- you're ok with your last checkpoint, don't want to change it as it is saved
+
+2. mixed is the index that you're currently working on, not your file tree
+- you made too many disorganized commits but you want to clean up your commit checkpoints 
+- not super often
+
+3. hard is index you're working on , files in your computer
+-hard is the only flag that will actually delete files
+-you've catastrophically screwed up your computer's file tree and deleted everything
+-Loses all changes you've made to trackedf files
+-Note: Untracked files don't get reset (new files on your working directory won't get deleted)
+
