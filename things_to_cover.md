@@ -10,7 +10,7 @@ For downloading from a 3rd party repository you don't have push permissions for,
 - fetch and a merge
 3. what's a fetch and a merge?
 -fetch takes all the changes up to date on the online master
--merge takes those changes and 
+-merge takes those changes and brings the branches together by making changes to local directory
 # Pulling from class repository, pushing to your own repository
 ## Things to do once
 1. Fork class repo > personal online repo
@@ -28,6 +28,7 @@ For downloading from a 3rd party repository you don't have push permissions for,
 ## Personal Project Workflow
 1. Make Changes
 2. Git commands
+
 -git add [files]
 -git commit -m "Message for commit"
 -git push 
@@ -35,8 +36,10 @@ For downloading from a 3rd party repository you don't have push permissions for,
 # Conflict merging
 
 ## merge conflicts
+-generally won't happen because github will intelligently merge
 - when do they happen ( won't happen at metis)
-
+-one person deletes a file, one person edits
+-edits on same lines
 ## How do you resolve them
 - look for <==== HEAD tag  
 - Make changes you want, then delete tag
